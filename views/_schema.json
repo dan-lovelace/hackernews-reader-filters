@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com.com/dan-lovelace/hackernews-reader-filters/views/_schema.json",
+  "title": "HackerNews Reader Filters - Views",
+  "description": "View filters for HackerNews Reader",
+  "type": "object",
+  "properties": {
+    "by": {
+      "description": "The user who created the item",
+      "type": "object",
+      "properties": {
+        "effect": { "enum": ["allow", "deny"] },
+        "patterns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": { "type": "string" },
+              "flags": {
+                "type": "array",
+                "items": { "enum": ["d", "g", "i", "m", "s", "u", "v", "y"] }
+              }
+            }
+          }
+        }
+      }
+    },
+    "text": {
+      "description": "Any text the user provided at time of creation",
+      "type": "object",
+      "properties": {
+        "effect": { "enum": ["allow", "deny"] },
+        "patterns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": { "type": "string" },
+              "flags": {
+                "type": "array",
+                "items": { "enum": ["d", "g", "i", "m", "s", "u", "v", "y"] }
+              }
+            }
+          }
+        }
+      }
+    },
+    "title": {
+      "description": "Main title of the item",
+      "type": "object",
+      "properties": {
+        "effect": { "enum": ["allow", "deny"] },
+        "patterns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": { "type": "string" },
+              "flags": {
+                "type": "array",
+                "items": { "enum": ["d", "g", "i", "m", "s", "u", "v", "y"] }
+              }
+            }
+          }
+        }
+      }
+    },
+    "url": {
+      "description": "A URL the user provided at time of creation",
+      "type": "object",
+      "properties": {
+        "effect": { "enum": ["allow", "deny"] },
+        "patterns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": { "type": "string" },
+              "flags": {
+                "type": "array",
+                "items": { "enum": ["d", "g", "i", "m", "s", "u", "v", "y"] }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

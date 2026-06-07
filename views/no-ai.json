@@ -1,0 +1,7 @@
+{
+  "$schema": "https://github.com.com/dan-lovelace/hackernews-reader-filters/views/_schema.json",
+  "title": {
+    "effect": "deny",
+    "patterns": [{ "text": "\bAI\b", "flags": ["i"] }]
+  }
+}
