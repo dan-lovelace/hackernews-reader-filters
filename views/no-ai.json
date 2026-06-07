@@ -1,10 +1,13 @@
 {
   "$schema": "https://raw.githubusercontent.com/dan-lovelace/hackernews-reader-filters/refs/heads/feat/initial-setup/views/_schema.json",
-  "title": {
-    "effect": "allow",
-    "patterns": [
-      { "input": "\bAI\b", "flags": ["i"] },
-      { "input": "LLM", "flags": ["i"] }
-    ]
+  "schema_version": 1,
+  "filters": {
+    "title": {
+      "effect": "allow",
+      "patterns": [
+        { "input": "\bAI\b", "flags": ["i"] },
+        { "input": "LLM", "flags": ["i"] }
+      ]
+    }
   }
 }

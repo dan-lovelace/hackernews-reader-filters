@@ -5,80 +5,96 @@
   "description": "View filters for HackerNews Reader",
   "type": "object",
   "properties": {
-    "by": {
-      "description": "The user who created the item",
+    "schema_version": {
+      "type": "number"
+    },
+    "filters": {
       "type": "object",
       "properties": {
-        "effect": { "enum": ["allow", "deny"] },
-        "patterns": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "input": { "type": "string" },
-              "flags": {
-                "type": "array",
-                "items": { "enum": ["d", "g", "i", "m", "s", "u", "v", "y"] }
+        "by": {
+          "description": "The user who created the item",
+          "type": "object",
+          "properties": {
+            "effect": { "enum": ["allow", "deny"] },
+            "patterns": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "input": { "type": "string" },
+                  "flags": {
+                    "type": "array",
+                    "items": {
+                      "enum": ["d", "g", "i", "m", "s", "u", "v", "y"]
+                    }
+                  }
+                }
               }
             }
           }
-        }
-      }
-    },
-    "text": {
-      "description": "Any text the user provided at time of creation",
-      "type": "object",
-      "properties": {
-        "effect": { "enum": ["allow", "deny"] },
-        "patterns": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "input": { "type": "string" },
-              "flags": {
-                "type": "array",
-                "items": { "enum": ["d", "g", "i", "m", "s", "u", "v", "y"] }
+        },
+        "text": {
+          "description": "Any text the user provided at time of creation",
+          "type": "object",
+          "properties": {
+            "effect": { "enum": ["allow", "deny"] },
+            "patterns": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "input": { "type": "string" },
+                  "flags": {
+                    "type": "array",
+                    "items": {
+                      "enum": ["d", "g", "i", "m", "s", "u", "v", "y"]
+                    }
+                  }
+                }
               }
             }
           }
-        }
-      }
-    },
-    "title": {
-      "description": "Main title of the item",
-      "type": "object",
-      "properties": {
-        "effect": { "enum": ["allow", "deny"] },
-        "patterns": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "input": { "type": "string" },
-              "flags": {
-                "type": "array",
-                "items": { "enum": ["d", "g", "i", "m", "s", "u", "v", "y"] }
+        },
+        "title": {
+          "description": "Main title of the item",
+          "type": "object",
+          "properties": {
+            "effect": { "enum": ["allow", "deny"] },
+            "patterns": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "input": { "type": "string" },
+                  "flags": {
+                    "type": "array",
+                    "items": {
+                      "enum": ["d", "g", "i", "m", "s", "u", "v", "y"]
+                    }
+                  }
+                }
               }
             }
           }
-        }
-      }
-    },
-    "url": {
-      "description": "A URL the user provided at time of creation",
-      "type": "object",
-      "properties": {
-        "effect": { "enum": ["allow", "deny"] },
-        "patterns": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "input": { "type": "string" },
-              "flags": {
-                "type": "array",
-                "items": { "enum": ["d", "g", "i", "m", "s", "u", "v", "y"] }
+        },
+        "url": {
+          "description": "A URL the user provided at time of creation",
+          "type": "object",
+          "properties": {
+            "effect": { "enum": ["allow", "deny"] },
+            "patterns": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "input": { "type": "string" },
+                  "flags": {
+                    "type": "array",
+                    "items": {
+                      "enum": ["d", "g", "i", "m", "s", "u", "v", "y"]
+                    }
+                  }
+                }
               }
             }
           }
