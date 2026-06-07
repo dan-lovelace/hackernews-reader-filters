@@ -1,9 +1,18 @@
 {
   "$schema": "https://raw.githubusercontent.com/dan-lovelace/hackernews-reader-filters/refs/heads/feat/initial-setup/views/_schema.json",
   "schema_version": 1,
+  "name": "No AI",
+  "description": "Removes any stories or comments that mention AI",
   "filters": {
+    "text": {
+      "effect": "deny",
+      "patterns": [
+        { "input": "\bAI\b", "flags": ["i"] },
+        { "input": "LLM", "flags": ["i"] }
+      ]
+    },
     "title": {
-      "effect": "allow",
+      "effect": "deny",
       "patterns": [
         { "input": "\bAI\b", "flags": ["i"] },
         { "input": "LLM", "flags": ["i"] }

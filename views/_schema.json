@@ -8,7 +8,17 @@
     "schema_version": {
       "type": "number"
     },
+    "name": {
+      "description": "Name of the view to be displayed inside the Reader",
+      "type": "string"
+    },
+    "description": {
+      "description": "A short description of what the view does",
+      "type": "string"
+    },
     "filters": {
+      "title": "Filters",
+      "description": "Configure allow and deny rules to target different item fields",
       "type": "object",
       "properties": {
         "by": {
