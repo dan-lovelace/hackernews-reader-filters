@@ -15,7 +15,7 @@
           "items": {
             "type": "object",
             "properties": {
-              "text": { "type": "string" },
+              "input": { "type": "string" },
               "flags": {
                 "type": "array",
                 "items": { "enum": ["d", "g", "i", "m", "s", "u", "v", "y"] }
@@ -35,7 +35,7 @@
           "items": {
             "type": "object",
             "properties": {
-              "text": { "type": "string" },
+              "input": { "type": "string" },
               "flags": {
                 "type": "array",
                 "items": { "enum": ["d", "g", "i", "m", "s", "u", "v", "y"] }
@@ -55,7 +55,7 @@
           "items": {
             "type": "object",
             "properties": {
-              "text": { "type": "string" },
+              "input": { "type": "string" },
               "flags": {
                 "type": "array",
                 "items": { "enum": ["d", "g", "i", "m", "s", "u", "v", "y"] }
@@ -75,7 +75,7 @@
           "items": {
             "type": "object",
             "properties": {
-              "text": { "type": "string" },
+              "input": { "type": "string" },
               "flags": {
                 "type": "array",
                 "items": { "enum": ["d", "g", "i", "m", "s", "u", "v", "y"] }
