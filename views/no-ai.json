@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/dan-lovelace/hackernews-reader-filters/refs/heads/feat/initial-setup/views/_schema.json",
   "title": {
-    "effect": "deny",
+    "effect": "allow",
     "patterns": [
       { "input": "\bAI\b", "flags": ["i"] },
       { "input": "LLM", "flags": ["i"] }
