@@ -25,14 +25,23 @@
           "description": "The user who created the item",
           "type": "object",
           "properties": {
-            "effect": { "enum": ["allow", "deny"] },
+            "effect": {
+              "description": "Whether to allow or deny the item",
+              "enum": ["allow", "deny"]
+            },
             "patterns": {
+              "description": "Matching patterns defined using regular expressions",
               "type": "array",
               "items": {
+                "description": "The list of regular expression patterns",
                 "type": "object",
                 "properties": {
-                  "input": { "type": "string" },
+                  "input": {
+                    "description": "The regular expression input string",
+                    "type": "string"
+                  },
                   "flags": {
+                    "description": "Any regular expression flags to pass with the input",
                     "type": "array",
                     "items": {
                       "enum": ["d", "g", "i", "m", "s", "u", "v", "y"]
@@ -47,14 +56,23 @@
           "description": "Any text the user provided at time of creation",
           "type": "object",
           "properties": {
-            "effect": { "enum": ["allow", "deny"] },
+            "effect": {
+              "description": "Whether to allow or deny the item",
+              "enum": ["allow", "deny"]
+            },
             "patterns": {
+              "description": "Matching patterns defined using regular expressions",
               "type": "array",
               "items": {
+                "description": "The list of regular expression patterns",
                 "type": "object",
                 "properties": {
-                  "input": { "type": "string" },
+                  "input": {
+                    "description": "The regular expression input string",
+                    "type": "string"
+                  },
                   "flags": {
+                    "description": "Any regular expression flags to pass with the input",
                     "type": "array",
                     "items": {
                       "enum": ["d", "g", "i", "m", "s", "u", "v", "y"]
@@ -69,14 +87,23 @@
           "description": "Main title of the item",
           "type": "object",
           "properties": {
-            "effect": { "enum": ["allow", "deny"] },
+            "effect": {
+              "description": "Whether to allow or deny the item",
+              "enum": ["allow", "deny"]
+            },
             "patterns": {
+              "description": "Matching patterns defined using regular expressions",
               "type": "array",
               "items": {
+                "description": "The list of regular expression patterns",
                 "type": "object",
                 "properties": {
-                  "input": { "type": "string" },
+                  "input": {
+                    "description": "The regular expression input string",
+                    "type": "string"
+                  },
                   "flags": {
+                    "description": "Any regular expression flags to pass with the input",
                     "type": "array",
                     "items": {
                       "enum": ["d", "g", "i", "m", "s", "u", "v", "y"]
@@ -91,14 +118,23 @@
           "description": "A URL the user provided at time of creation",
           "type": "object",
           "properties": {
-            "effect": { "enum": ["allow", "deny"] },
+            "effect": {
+              "description": "Whether to allow or deny the item",
+              "enum": ["allow", "deny"]
+            },
             "patterns": {
+              "description": "Matching patterns defined using regular expressions",
               "type": "array",
               "items": {
+                "description": "The list of regular expression patterns",
                 "type": "object",
                 "properties": {
-                  "input": { "type": "string" },
+                  "input": {
+                    "description": "The regular expression input string",
+                    "type": "string"
+                  },
                   "flags": {
+                    "description": "Any regular expression flags to pass with the input",
                     "type": "array",
                     "items": {
                       "enum": ["d", "g", "i", "m", "s", "u", "v", "y"]
