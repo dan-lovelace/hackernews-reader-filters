@@ -13,7 +13,7 @@
       "type": "string"
     },
     "description": {
-      "description": "A short description of what the view does",
+      "description": "A brief description of what the view does, displayed inside the Reader",
       "type": "string"
     },
     "filters": {
