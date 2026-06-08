@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/dan-lovelace/hackernews-reader-filters/refs/heads/feat/initial-setup/views/_schema.json",
+  "$schema": "https://raw.githubusercontent.com/dan-lovelace/hackernews-reader-filters/refs/heads/main/views/_schema.json",
   "schema_version": 1,
   "name": "Only AI",
   "description": "Only shows stories related to AI",
