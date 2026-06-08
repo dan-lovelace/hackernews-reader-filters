@@ -1,0 +1,80 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dan-lovelace/hackernews-reader-filters/refs/heads/main/views/_schema.json",
+  "schema_version": 1,
+  "name": "No AI",
+  "description": "Removes any stories or comments that mention AI",
+  "filters": {
+    "text": {
+      "effect": "deny",
+      "patterns": [
+        { "input": "\\bagent[s]?\\b", "flags": ["i"] },
+        { "input": "agentic", "flags": ["i"] },
+        { "input": "\\bAIs?\\b", "flags": ["i"] },
+        { "input": "anthropic", "flags": ["i"] },
+        { "input": "artificial intelligence", "flags": ["i"] },
+        { "input": "chatgpt", "flags": ["i"] },
+        { "input": "claude", "flags": ["i"] },
+        { "input": "clawd", "flags": ["i"] },
+        { "input": "copilot", "flags": ["i"] },
+        { "input": "Cursor", "flags": [] },
+        { "input": "deepseek", "flags": ["i"] },
+        { "input": "gemini", "flags": ["i"] },
+        { "input": "generative", "flags": ["i"] },
+        { "input": "gpt", "flags": ["i"] },
+        { "input": "LLM", "flags": ["i"] },
+        { "input": "machine learning", "flags": ["i"] },
+        { "input": "mcp", "flags": ["i"] },
+        { "input": "mistral", "flags": ["i"] },
+        { "input": "model[s]?", "flags": ["i"] },
+        { "input": "mythos", "flags": ["i"] },
+        { "input": "openai", "flags": ["i"] },
+        { "input": "perplexity", "flags": ["i"] },
+        { "input": "prompt[s]?", "flags": ["i"] },
+        { "input": "\\bRAG\\b", "flags": ["i"] },
+        { "input": "token[s]?", "flags": ["i"] },
+        { "input": "transformer", "flags": ["i"] },
+        { "input": "vibe ?code?", "flags": ["i"] }
+      ]
+    },
+    "title": {
+      "effect": "deny",
+      "patterns": [
+        { "input": "\\bagent[s]?\\b", "flags": ["i"] },
+        { "input": "agentic", "flags": ["i"] },
+        { "input": "\\bAIs?\\b", "flags": ["i"] },
+        { "input": "anthropic", "flags": ["i"] },
+        { "input": "artificial intelligence", "flags": ["i"] },
+        { "input": "chatgpt", "flags": ["i"] },
+        { "input": "claude", "flags": ["i"] },
+        { "input": "clawd", "flags": ["i"] },
+        { "input": "copilot", "flags": ["i"] },
+        { "input": "Cursor", "flags": [] },
+        { "input": "deepseek", "flags": ["i"] },
+        { "input": "gemini", "flags": ["i"] },
+        { "input": "generative", "flags": ["i"] },
+        { "input": "gpt", "flags": ["i"] },
+        { "input": "LLM", "flags": ["i"] },
+        { "input": "machine learning", "flags": ["i"] },
+        { "input": "mcp", "flags": ["i"] },
+        { "input": "mistral", "flags": ["i"] },
+        { "input": "model[s]?", "flags": ["i"] },
+        { "input": "mythos", "flags": ["i"] },
+        { "input": "openai", "flags": ["i"] },
+        { "input": "perplexity", "flags": ["i"] },
+        { "input": "prompt[s]?", "flags": ["i"] },
+        { "input": "\\bRAG\\b", "flags": ["i"] },
+        { "input": "token[s]?", "flags": ["i"] },
+        { "input": "transformer", "flags": ["i"] },
+        { "input": "vibe ?code?", "flags": ["i"] }
+      ]
+    },
+    "url": {
+      "effect": "deny",
+      "patterns": [
+        { "input": "anthropic", "flags": ["i"] },
+        { "input": "openai", "flags": ["i"] },
+        { "input": "simonwillson", "flags": ["i"] }
+      ]
+    }
+  }
+}
