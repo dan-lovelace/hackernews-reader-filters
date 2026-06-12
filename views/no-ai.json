@@ -15,6 +15,7 @@
         { "input": "chatgpt", "flags": ["i"] },
         { "input": "claude", "flags": ["i"] },
         { "input": "clawd", "flags": ["i"] },
+        { "input": "codex", "flags": ["i"] },
         { "input": "copilot", "flags": ["i"] },
         { "input": "Cursor", "flags": [] },
         { "input": "deepseek", "flags": ["i"] },
@@ -33,7 +34,8 @@
         { "input": "\\bRAG\\b", "flags": ["i"] },
         { "input": "token[s]?", "flags": ["i"] },
         { "input": "transformer", "flags": ["i"] },
-        { "input": "vibe ?code?", "flags": ["i"] }
+        { "input": "vibe ?code?", "flags": ["i"] },
+        { "input": "xAI", "flags": [] }
       ]
     },
     "title": {
@@ -47,6 +49,7 @@
         { "input": "chatgpt", "flags": ["i"] },
         { "input": "claude", "flags": ["i"] },
         { "input": "clawd", "flags": ["i"] },
+        { "input": "codex", "flags": ["i"] },
         { "input": "copilot", "flags": ["i"] },
         { "input": "Cursor", "flags": [] },
         { "input": "deepseek", "flags": ["i"] },
@@ -65,7 +68,8 @@
         { "input": "\\bRAG\\b", "flags": ["i"] },
         { "input": "token[s]?", "flags": ["i"] },
         { "input": "transformer", "flags": ["i"] },
-        { "input": "vibe ?code?", "flags": ["i"] }
+        { "input": "vibe ?code?", "flags": ["i"] },
+        { "input": "xAI", "flags": [] }
       ]
     },
     "url": {
