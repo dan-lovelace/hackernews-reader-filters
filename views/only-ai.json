@@ -19,6 +19,7 @@
         { "input": "copilot", "flags": ["i"] },
         { "input": "Cursor", "flags": [] },
         { "input": "deepseek", "flags": ["i"] },
+        { "input": "fable", "flags": ["i"] },
         { "input": "gemini", "flags": ["i"] },
         { "input": "generative", "flags": ["i"] },
         { "input": "gpt", "flags": ["i"] },
@@ -34,7 +35,7 @@
         { "input": "\\bRAG\\b", "flags": ["i"] },
         { "input": "token[s]?", "flags": ["i"] },
         { "input": "transformer", "flags": ["i"] },
-        { "input": "vibe ?code?", "flags": ["i"] },
+        { "input": "vibe[ -]?code?", "flags": ["i"] },
         { "input": "xAI", "flags": [] }
       ]
     }
