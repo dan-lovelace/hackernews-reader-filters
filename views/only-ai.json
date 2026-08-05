@@ -21,6 +21,7 @@
         { "input": "deepseek", "flags": ["i"] },
         { "input": "fable", "flags": ["i"] },
         { "input": "gemini", "flags": ["i"] },
+        { "input": "genai", "flags": ["i"] },
         { "input": "generative", "flags": ["i"] },
         { "input": "gpt", "flags": ["i"] },
         { "input": "kimi", "flags": ["i"] },
